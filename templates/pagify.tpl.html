@@ -1,0 +1,37 @@
+<div class="content">
+    <div class="row">
+        <nav class="pagify-nav col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                {{#each pages}}
+                <li class="{{class}}">
+                    <a href="#page-{{number}}" class="subnav-link">{{{title}}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </nav>
+        <div class="pagify-content-group col-md-9">
+            {{#each pages}}
+            <div id="page-{{number}}" class="pagify-page {{class}}">
+                <h2>{{{title}}}</h2>
+                {{{content}}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="row">
+        <nav class="col-md-offset-3 col-md-9 page-quick-nav">
+            <ul class="pager">
+                <li class="disabled previous">
+                    <a href="#page-0" class="page-nav-link">
+                        <span aria-hidden="true">&laquo;</span> Back
+                    </a>
+                </li>
+                <li class="next">
+                    <a href="#page-2" class="page-nav-link">
+                        Next <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

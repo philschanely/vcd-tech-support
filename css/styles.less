@@ -1,0 +1,306 @@
+@import url("bootswatch.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,700,700i,900,900i');
+
+// Colors
+@color-cyan:#3398DB;
+@color-blue:#375A7F;
+@color-green:#00BC8C;
+@color-red:#E74C3C;
+@color-orange:#F39C12;
+@color-grey:#B1B1B1;
+@color-darkgrey:#464545;
+@color-nearblack:#222222;
+
+
+// Bootswatch/bootstrap overrides
+body {
+  color:@color-grey;
+  font-weight:300;
+}
+
+code {
+  background-color:fadeout(@color-darkgrey, 50%);
+  color:@color-orange;
+  font-weight:normal;
+}
+
+dl {
+  border-left:4px solid @color-green;
+  padding:10px;
+  margin-top:10px;
+  background-color:fadeout(@color-green, 40%);
+  dt {
+    display: block;
+    margin-bottom:10px;
+    color:white;
+  }
+  dd {
+    color:white;
+  }
+}
+
+h4 {
+  margin-top:30px;
+}
+
+pre {
+  border-color:transparent;
+  color:@color-grey;
+}
+
+strong em, em strong {
+  color:@color-cyan;
+}
+
+.table tr {
+  border-bottom:1px solid fadeout(@color-darkgrey, 0%);
+}
+
+
+// Custom styles
+footer {
+  border-top:1px solid @color-grey;
+  margin-top:40px;
+  padding:40px 0;
+}
+.footer-brand {
+  margin-top:0;
+  font-size:21px;
+}
+.pagify-nav {
+  margin-top:21px;
+}
+.pagify-page {
+  display:none;
+  &.active {
+    display: block;
+  }
+}
+
+// Rogue Highlighter overrides
+@code-color-1: white;
+@code-color-2: black;
+@code-color-3: #998;
+@code-color-4: #a61717;
+@code-color-5: #e3d2d2;
+@code-color-6: #999;
+@code-color-7: #fdd;
+@code-color-8: #a00;
+@code-color-9: #faa;
+@code-color-10: #dfd;
+@code-color-11: #afa;
+@code-color-12: #888;
+@code-color-13: #555;
+@code-color-14: #aaa;
+@code-color-15: #458;
+@code-color-16: #099;
+@code-color-17: @color-green;
+@code-color-18: @color-cyan;
+@code-color-19: #0086B3;
+@code-color-20: #800080;
+@code-color-21: #900;
+@code-color-22: @color-orange;
+@code-color-23: #bbb;
+@code-color-24: #009926;
+@code-color-25: #990073;
+@code-color-26: fadeout(@color-darkgrey, 50%);
+
+
+.highlight {
+  background: @code-color-1;
+  .c {
+    color: @code-color-3;
+    font-style: italic;
+  }
+  .err {
+    color: @code-color-4;
+    background-color: @code-color-5;
+  }
+  .k {
+    font-weight: bold;
+  }
+  .o {
+    font-weight: bold;
+  }
+  .cm {
+    color: @code-color-3;
+    font-style: italic;
+  }
+  .cp {
+    color: @code-color-6;
+    font-weight: bold;
+  }
+  .c1 {
+    color: @code-color-3;
+    font-style: italic;
+  }
+  .cs {
+    color: @code-color-6;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .gd {
+    color: @code-color-1;
+    background-color: @code-color-7;
+    .x {
+      color: @code-color-1;
+      background-color: @code-color-9;
+    }
+  }
+  .ge {
+    font-style: italic;
+  }
+  .gr {
+    color: @code-color-8;
+  }
+  .gh {
+    color: @code-color-6;
+  }
+  .gi {
+    color: @code-color-1;
+    background-color: @code-color-10;
+    .x {
+      color: @code-color-1;
+      background-color: @code-color-11;
+    }
+  }
+  .go {
+    color: @code-color-12;
+  }
+  .gp {
+    color: @code-color-13;
+  }
+  .gs {
+    font-weight: bold;
+  }
+  .gu {
+    color: @code-color-14;
+  }
+  .gt {
+    color: @code-color-8;
+  }
+  .kc {
+    font-weight: bold;
+  }
+  .kd {
+    font-weight: bold;
+  }
+  .kp {
+    font-weight: bold;
+  }
+  .kr {
+    font-weight: bold;
+  }
+  .kt {
+    color: @code-color-15;
+    font-weight: bold;
+  }
+  .m {
+    color: @code-color-16;
+  }
+  .s {
+    color: @code-color-17;
+  }
+  .na {
+    color: @code-color-18;
+  }
+  .nb {
+    color: @code-color-19;
+  }
+  .nc {
+    color: @code-color-15;
+    font-weight: bold;
+  }
+  .no {
+    color: @code-color-18;
+  }
+  .ni {
+    color: @code-color-20;
+  }
+  .ne {
+    color: @code-color-21;
+    font-weight: bold;
+  }
+  .nf {
+    color: @code-color-21;
+    font-weight: bold;
+  }
+  .nn {
+    color: @code-color-13;
+  }
+  .nt {
+    color: @code-color-22;
+  }
+  .nv {
+    color: @code-color-18;
+  }
+  .ow {
+    font-weight: bold;
+  }
+  .w {
+    color: @code-color-23;
+  }
+  .mf {
+    color: @code-color-16;
+  }
+  .mh {
+    color: @code-color-16;
+  }
+  .mi {
+    color: @code-color-16;
+  }
+  .mo {
+    color: @code-color-16;
+  }
+  .sb {
+    color: @code-color-17;
+  }
+  .sc {
+    color: @code-color-17;
+  }
+  .sd {
+    color: @code-color-17;
+  }
+  .s2 {
+    color: @code-color-17;
+  }
+  .se {
+    color: @code-color-17;
+  }
+  .sh {
+    color: @code-color-17;
+  }
+  .si {
+    color: @code-color-17;
+  }
+  .sx {
+    color: @code-color-17;
+  }
+  .sr {
+    color: @code-color-24;
+  }
+  .s1 {
+    color: @code-color-17;
+  }
+  .ss {
+    color: @code-color-25;
+  }
+  .bp {
+    color: @code-color-6;
+  }
+  .vc {
+    color: @code-color-18;
+  }
+  .vg {
+    color: @code-color-18;
+  }
+  .vi {
+    color: @code-color-18;
+  }
+  .il {
+    color: @code-color-16;
+  }
+}
+.highlighter-rouge .highlight {
+  background: @code-color-26;
+}
