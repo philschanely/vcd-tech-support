@@ -1,0 +1,36 @@
+language: ruby
+rvm:
+  - 2.3.1
+
+install:
+  - bundle install
+  - gem install jekyll
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - JEKYLL_ENV=production
+
+notifications:
+  email:
+    recipients:
+      - philschanely@gmail.com
+    on_success: always
+    on_failure: always
+
+script:
+  - chmod +x _script/build.sh
+  - _script/build.sh
+
+after_success:
+  - chmod +x _script/deploy.sh
+  - _script/deploy.sh
+
+sudo: false
+addons:
+  apt:
+    packages:
+      - ncftp
